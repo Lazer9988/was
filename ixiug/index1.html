@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="jquery.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script>
+$(function(){
+	/*导航*/
+	
+	$(".top h1 a").hover(function(){
+	$(this).addClass("a-now")
+	
+	},function(){
+	$(this).removeClass("a_now")
+		})
+
+	/*banner*/	
+	$(".Box img").hide();
+	$(".Box img:first").show()
+	$(".topnav li").hide();
+	$(".topnav li").eq(0).show();
+	$(".topnav .le").show();
+	var n=0
+	function run(){
+		
+		if(n>2){n=0}else{n=n+1;}
+		
+		$(".Box img").hide();
+		$(".Box img").eq(n).fadeIn();
+		$(".topnav li").hide();
+		$(".topnav .le").show();
+		$(".topnav li").eq(n).fadeIn();
+		
+		}
+	
+	/*左按钮*/	
+$(".leftsanjiao").click(function(){	
+	 if(n<1){n=3}else{n=n-1}
+	$(".Box img").hide();
+	$(".Box img").eq(n).fadeIn();
+	})
+	
+	/*右按钮*/
+	
+$(".rightsanjiao").click(function(){
+		
+	 if(n>2){n=0}else{n=n+1}
+	$(".Box img").hide();
+	$(".Box img").eq(n).fadeIn();
+	
+	})		
+	var aaa=setInterval(run,3000);
+	
+	$(".Box").hover(function(){
+		clearInterval(aaa)
+		},function(){
+		aaa=setInterval(run,3000);
+			})
+			
+	 /*中心内容*/
+	 var n
+	$(".container div").hover(function(){
+		n=$(".container div").index(this)	
+		$(this).addClass("content_now"+n)
+		
+		},function(){
+    $(this).removeClass("content_now"+n);
+		})
+			
+			
+	/*页尾1*/
+	
+	$(".z").hover(function(){
+	$(this).animate({width:1000,height:146,},1000)
+	$(this).addClass("san_now")
+	
+	},function(){
+	$(this).animate({width:1000,height:124,},1000)
+	$(this).removeClass("san_now")
+		})
+	
+	})
+	
+</script>
+<style>
+@import url("css/default.css");
+@import url("css/component.css");
+</style>
+<link href="index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--顶部-->
+<div class="top_box">
+    <div class="top">
+    <a href="" class="LOGO"><img src="img/logo.png"></a>
+     <h1>
+         <a href="">AB0UT</a>
+          <p>|</p>
+         <a href="" style="color:#22b9ff">SERVICES</a>
+          <p>|</p>
+         <a href="">WORKS</a>
+          <p>|</p>
+         <a href="">BLOG</a>
+          <p>|</p>
+         <a class="contactus" href="">CONTACTUS</a>      
+     </h1>
+     <input style="color:#C3C3C3" value="search">
+</div>
+</div>  
+<!--banner-->
+<div class="bjz">
+     <ul class="topnav">
+          <li class="we"></li>
+          <li class="we0"></li>
+          <li class="we1"></li>
+          <li class="we2"></li>
+          <li class="le"></li>
+     </ul>  
+<div  class="Box"> 
+     <p class="leftsanjiao"></p>
+     <p class="rightsanjiao"></p>
+     <img class="ig" src="img/iphone.png">
+     <img class="ig01" src="img/iphone06...png">
+     <img class="ig02" src="img/iphone08.png"> 
+     <img class="ig03" src="img/iPh04.png">  
+</div>
+  
+</div>
+<!--中心内容-->
+<div class="bjx">
+     <div class="container">
+        <a href=""><div class="content"></div></a>
+        <a href=""><div class="content2"></div></a>
+        <a href=""><div class="content3"></div></a>  
+     </div>
+</div>
+<!--下面内容-->
+<div class="bjc">
+       <div class="main">
+         <ul style="width:1102px;height:454px;overflow:hidden;" class="grid cs-style-4">
+				<li style="float:left;width:250px;height:200px;cursor:pointer;">
+					<figure>
+						<div><img src="images/Layer 1.png" alt="img05"></div>
+						<figcaption>
+							<h3>Safari</h3>
+							<span>Jacob Cummings</span>
+							<a href="#">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+		   <li style="float:left;width:250px;height:200px;cursor:pointer;">
+					<figure>
+						<div><img src="images/Layer 3.png" alt="img06"></div>
+						<figcaption>
+							<h3>Game Center</h3>
+							<span>Jacob Cummings</span>
+							<a href="#">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li style="float:left;width:250px;height:200px;cursor:pointer;">
+					<figure>
+						<div><img src="images/Layer 2.png" alt="img02"></div>
+						<figcaption>
+							<h3>Music</h3>
+							<span>Jacob Cummings</span>
+							<a href="#">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li style="float:left;width:250px;height:200px;cursor:pointer;">
+					<figure>
+						<div><img src="images/Layer 4.png" alt="img04"></div>
+						<figcaption>
+							<h3>Settings</h3>
+							<span>Jacob Cummings</span>
+							<a href="#">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li style="float:left;width:250px;height:200px;cursor:pointer;">
+					<figure>
+						<div><img src="images/Layer 5.png" alt="img01"></div>
+						<figcaption>
+							<h3>Camera</h3>
+							<span>Jacob Cummings</span>
+							<a href="#">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+				<li style="float:left;width:250px;height:200px;cursor:pointer;">
+					<figure>
+						<div><img src="images/Layer 6.png" alt="img03"></div>
+						<figcaption>
+							<h3>Phone</h3>
+							<span>Jacob Cummings</span>
+							<a href="#">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+                		<li style="float:left;width:250px;height:200px;cursor:pointer;">
+					<figure>
+						<div><img src="images/Layer 7png.png" alt="img03"></div>
+						<figcaption>
+							<h3>Phone</h3>
+							<span>Jacob Cummings</span>
+							<a href="#">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+                		<li style="float:left;width:250px;height:200px;cursor:pointer;">
+					<figure>
+						<div><img src="images/Layer 8.png" alt="img03"></div>
+						<figcaption>
+							<h3>Phone</h3>
+							<span>Jacob Cummings</span>
+							<a href="#">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+		 </ul>
+		
+		<script src="js/toucheffects.js"></script>
+       
+  </div>
+
+</div>
+<!--页尾1-->
+<div class="bjv">
+<div class="z"></div>
+</div>
+<!--尾页-->
+<div class="dim">
+      <div class="d">
+      <div class="jl">
+     <ul class="bottom_box">
+        <li>About</li>
+           <p>丨</p>
+        <li>Services</li>
+            <p>丨</p>
+        <li>Work</li>
+           <p>丨</p>
+        <li>Blog</li>
+            <p>丨</p>
+         <li style="margin:0px;">Contact</li>
+     </ul>
+     <h3 class="aa">@2013 BlueBox. AllRights Reserved </h3>
+     <h4 class="bb">The logos usedinthe design are the property of their respective owners/copyright holders. </h4>
+     </div>
+      <a href=""><img style="float:left;margin-left:291px;" src="img/social icons.png"></a>
+      </div>
+
+</div>
+</body>
+</html>
+<div style="display:none">
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6f798e51a1cd93937ee8293eece39b1a' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5718743'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s9.cnzz.com/stat.php%3Fid%3D5718743%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+	</div>

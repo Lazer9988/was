@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*重置*/
+body{margin:0}
+a{text-decoration:none}
+p,h1,h2,ul,li{margin:0;padding:0;list-style:none;}
+img{display:block;margin:0;border:none}
+*{color:#333;font-family:"微软雅黑"; font-weight:normal}
+
+
+/*顶部*/
+.top_box{height:90px; min-width:1400px;}
+.top{width:1100px;  
+    height:50px;
+	margin:auto; 
+	margin-top:30px;
+	line-height:14px;
+	overflow:hidden;
+	}
+.top h1 a:hover{ color:#00aeff}
+.LOGO{width:189px;
+	height:47px;
+	margin-left:50px;
+      float:left;}
+.top h1{width:463px;
+	margin-left:163px;
+	margin-top:19px;
+	font-size:14px;
+	text-decoration:none;
+	float:left;
+	overflow:hidden;}
+.top h1 a,p{margin-right:20px;float:left;color:#000000}
+.top .contactus{margin:0px;}
+.top input{background-image:url(img/input.jpg);
+			width:130px;
+			height:30px;
+		    float:left;
+			line-height:30px;
+			font-style:italic;
+			text-indent:8px;
+			font-size:16px;
+			border:#CCCCCC solid 1px;
+			margin-top:10px;
+			margin-left:58px;}
+			
+.a_now{ background-color:#FFFFFF;color:#22b9ff}						
+/*banner*/	
+.bjz{height:550px;background-image:url(img/banner1.jpg); min-width:1400px;position:relative;}	
+.Box{ width:1098px;height:398px;margin:auto;
+		margin-top:134px; overflow:hidden;
+		 cursor:pointer; position:relative;}
+	  	  
+.topnav{width:893px;height:62px;padding-top:70px;margin:auto; position:relative;}		  
+.ig{width:714px;height:398px; margin-left:200px;}
+.ig01{width:714px;height:398px;margin-left:200px;}
+.ig02{width:714px;height:360px; margin-left:200px;}
+.ig03{width:714px;height:360px; margin-left:200px;}
+
+.we{background-image:url(img/We%20.png); width:623px; height:42px; position:absolute; cursor:pointer; background-repeat:no-repeat;}
+.we0{background-image:url(img/This%20is%20what%20we%20do%20.png); width:623px; height:42px; position:absolute; cursor:pointer; background-repeat:no-repeat;}
+.we1{background-image:url(img/Step%20into%20our%20world%20.png); width:623px; height:42px; position:absolute; cursor:pointer; background-repeat:no-repeat;}
+.we2{background-image:url(img/Get%20some%20love%20back%20in%20your%20life%20.png); width:623px; height:42px; position:absolute; cursor:pointer; background-repeat:no-repeat;}
+
+
+.le{margin-top:-10px;margin-left:678px; background-image:url(img/learn%20button.png);position:absolute;width:221px;height:60px;cursor:pointer;}
+.leftsanjiao{background-image:url(img/S0.png);
+		background-repeat:no-repeat;
+		width:29px; height:50px;
+		 cursor:pointer;
+		 position:absolute;top:40px;left:0px}
+.rightsanjiao{background-image:url(img/S%2001.png);
+		background-repeat:no-repeat;
+		width:29px; height:50px;
+		cursor:pointer;
+		position:absolute;top:40px;right:0px}		
+
+/*中心内容*/
+.bjx{height:490px; min-width:1400px;}
+.container{height:490px;width:1130px;overflow:hidden;margin:auto;}
+.content{width:287px;height:316px;background-image:url(img/web%20design.png);background-repeat:no-repeat;margin-top:102px;float:left;margin-left:50px;}
+.content2{width:287px;height:316px;margin-left:63px; background-image:url(img/social%20media.png);background-repeat:no-repeat;margin-top:102px;float:left}
+.content3{width:287px;height:316px;margin-left:63px; background-image:url(img/mobile%20apps.png);background-repeat:no-repeat;margin-top:102px;float:left}
+.content_now0{background-image:url(img/Web%20Design1.png); width:330px;height:391px;}
+.content_now1{background-image:url(img/dxewxw.png); width:330px;height:391px;}
+.content_now2{background-image:url(img/ewdewd.png); width:331px;height:391px;}
+
+/*下面内容*/	
+.bjc{height:610px;
+	background-image:url(img/bg.png); 
+    overflow:hidden; min-width:1400px;}
+.main{width:1100px;height:455px;margin:auto;margin-top:56px;
+		 overflow:hidden;}
+beijing{width:1002px;height:454px;margin-top:1px;
+		background-image:url(img/potfolio-1.png);
+		background-repeat:no-repeat;}
+
+/*页尾1*/
+.bjv{height:240px; overflow:hidden; min-width:1400px}
+.z{ width:1000px;height:126px;margin:auto;margin-top:34px; cursor:pointer;background-image:url(img/fe.png); background-repeat:no-repeat;}
+		
+.san_now{background-image:url(img/logol.png);}		
+/*尾页*/
+.dim{height:210px; 
+	background-image:url(img/footer%20bg.png);
+	overflow:hidden;min-width:1400px;}
+.d{height:90px;width:1100px;
+		margin:auto;margin-top:45px;}
+.jl{width:474px;height:88px;float:left;overflow:hidden;}
+.aa{width:244px; height:13px;margin-left:60px; margin-top:22px;color:#E5E5E5;font-size:13px;cursor:pointer;}
+.bb{width:472px; margin-left:60px;margin-top:40px;color:#E5E5E5;font-size:10px;cursor:pointer;}
+.bottom_box{width:441px;height:22px;float:left; margin-left:60px}
+.bottom_box li,p{float:left; margin-right:17px;color:#E5E5E5;font-size:14px;
+text-decoration:none; cursor:pointer;}
+.bottom_box li:hover{color:#00aeff}

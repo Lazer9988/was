@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="jquery.js"></script>
+<script>
+$(function(){
+	/*导航*/
+	
+	$(".top h1 a").hover(function(){
+	$(this).addClass("a_now")
+	
+	},function(){
+	$(this).removeClass("a_now")
+		})
+
+	/*banner*/	
+	$(".Box img").hide();
+	$(".Box img:first").show()
+	
+	var n=0
+	function run(){
+		
+		if(n>2){n=0}else{n=n+1;}
+		
+		$(".Box img").hide();
+		$(".Box img").eq(n).fadeIn();
+		}
+	
+	/*左按钮*/	
+$(".leftsanjiao").click(function(){	
+	 if(n<1){n=3}else{n=n-1}
+	$(".Box img").hide();
+	$(".Box img").eq(n).fadeIn();
+	})
+	
+	/*右按钮*/
+	
+$(".rightsanjiao").click(function(){
+		
+	 if(n>2){n=0}else{n=n+1}
+	$(".Box img").hide();
+	$(".Box img").eq(n).fadeIn();
+	
+	})		
+	var aaa=setInterval(run,3000);
+	
+	$(".Box").hover(function(){
+		clearInterval(aaa)
+		},function(){
+		aaa=setInterval(run,3000);
+			})
+	
+	
+	})
+
+</script>
+
+
+<style>
+/*重置*/
+body{margin:0}
+a{text-decoration:none}
+p,h1,h2,ul,li{margin:0;padding:0;list-style:none}
+img{display:block;margin:0;border:none}
+*{color:#333;font-family:"微软雅黑"; font-weight:normal}
+
+
+/*顶部*/
+.top_box{height:120px; min-width:1400px;}
+.top{width:1100px;  
+    height:50px;
+	margin:auto; 
+	padding-top:30px;
+	line-height:14px;
+	overflow:hidden;
+	}
+.LOGO{width:189px;
+	height:47px;
+	margin-left:50px;
+      float:left;}
+.top h1{width:463px;
+	margin-left:163px;
+	margin-top:19px;
+	font-size:14px;
+	text-decoration:none;
+	float:left;
+	overflow:hidden;}
+.top h1 a,p{margin-right:20px; float:left;}
+.top .contactus{margin:0px;}
+.top input{background-image:url(img/input.jpg);
+			width:130px;
+			height:30px;
+		    float:left;
+			line-height:30px;
+			font-style:italic;
+			text-indent:8px;
+			font-size:16px;
+			border:#CCCCCC solid 1px;
+			margin-top:10px;
+			margin-left:58px;}
+			
+.a_now{ background-color:#FFFFFF;color:#22b9ff}						
+/*banner*/		
+.Box{ width:1098px;height:398px;margin:auto;
+		margin-top:70px; overflow:hidden;
+		 cursor:pointer; position:relative;}
+	  	  
+.topnav{width:893px;height:62px;padding-top:70px;margin:auto; position:relative;}		  
+.ig{width:714px;height:398px; margin-left:200px;}
+.ig01{width:714px;height:398px;margin-left:200px;}
+.ig02{width:714px;height:398px; margin-left:200px;}
+.ig03{width:714px;height:360px; margin-left:200px;}
+.we{background-image:url(img/We%20.png); width:623px; height:42px; position:absolute; cursor:pointer; background-repeat:no-repeat;}
+.le{margin-top:-10px;margin-left:678px; background-image:url(img/learn%20button.png);position:absolute;width:221px;height:60px;cursor:pointer;}
+.leftsanjiao{background-image:url(img/S0.png);
+		background-repeat:no-repeat;
+		width:29px; height:50px;
+		 cursor:pointer;
+		 position:absolute;top:40px;left:0px}
+.rightsanjiao{background-image:url(img/S%2001.png);
+		background-repeat:no-repeat;
+		width:29px; height:50px;
+		cursor:pointer;
+		position:absolute;top:40px;right:0px}		
+san_now{ background-image:url(img/arrow1.png)}
+
+/*中心内容*/
+.container{height:490px;width:1100px;overflow:hidden;margin:auto;}
+.content{width:287px;height:316px;background-image:url(img/web%20design.png);background-repeat:no-repeat;margin-top:102px;float:left;margin-left:50px;}
+.content2{width:287px;height:316px;margin-left:63px; background-image:url(img/social%20media.png);background-repeat:no-repeat;margin-top:102px;float:left}
+.content3{width:287px;height:316px;margin-left:63px; background-image:url(img/mobile%20apps.png);background-repeat:no-repeat;margin-top:102px;float:left}
+
+/*下面内容*/	
+.main{width:1100px;height:455px;margin:auto;margin-top:56px;
+		 overflow:hidden;}
+.beijing{width:1002px;height:454px;margin-top:1px;
+		background-image:url(img/potfolio-1.png);
+		background-repeat:no-repeat;}
+/*尾页*/
+.dim{height:210px; 
+	background-image:url(img/footer%20bg.png);
+	overflow:hidden;min-width:1400px;}
+.d{height:90px;width:1100px;
+		margin:auto;margin-top:45px;}
+
+
+</style>
+</head>
+<body>
+<!--顶部-->
+<div class="top_box">
+    <div class="top">
+    <a href="" class="LOGO"><img src="img/logo.png"></a>
+     <h1>
+         <a href="">AB0UT</a>
+          <p>|</p>
+         <a href="" style="color:#22b9ff">SERVICES</a>
+          <p>|</p>
+         <a href="">WORKS</a>
+          <p>|</p>
+         <a href="">BLOG</a>
+          <p>|</p>
+         <a class="contactus" href="">CONTACTUS</a>      
+     </h1>
+     <input value="search">
+</div>
+</div>  
+<!--banner-->
+<div style="height:550px;background-image:url(img/banner1.jpg); min-width:1400px;position:relative；">
+     <ul class="topnav">
+          <li class="we"></li>
+          <li class="le"></li>
+     </ul>  
+<div  class="Box"> 
+     <p class="leftsanjiao"></p>
+     <p class="rightsanjiao"></p>
+     <img class="ig" src="img/iphone.png">
+     <img class="ig01" src="img/iph02..png">
+     <img class="ig02" src="img/iPh03..png"> 
+     <img class="ig03" src="img/iPh04.png">  
+</div>
+  
+</div>
+<!--中心内容-->
+<div style="height:490px; min-width:1400px;">
+     <div class="container">
+        <a href=""><div class="content"></div></a>
+        <a href=""><div class="content2"></div></a>
+        <a href=""><div class="content3"></div></a>  
+     </div>
+</div>
+<!--下面内容-->
+<div style="height:610px;
+	background-image:url(img/bg.png); 
+    overflow:hidden; min-width:1400px;">
+       <div class="main">
+       <div class="beijing"></div>
+       </div>
+
+</div>
+<!--页尾1-->
+<div style="height:240px; overflow:hidden; min-width:1400px">
+<a href=""><img style="margin:auto;margin-top:34px" src="img/clients.png"></a>
+
+
+
+</div>
+<!--尾页-->
+<div class="dim">
+      <div class="d">
+      <a href=""><img style="float:left;" src="img/Home    _    About    _    Services    _    Work    _    Blog  .png"></a>
+      <a href=""><img style="float:left;margin-left:250px;" src="img/social icons.png"></a>
+      </div>
+
+
+
+
+</div>
+</body>
+</html>
